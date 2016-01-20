@@ -1,13 +1,13 @@
-function pow (x, n) {
-  var number = x;
+function pow(x, n) {
+  var result = x;
   for (var i = 1; i < n; i++) {
-    x *= number;
+    result *= x;
   }
-  return x;
+  return result;
 }
 
 var x = prompt('Назвіть число', '');
 var n = prompt('Назвіть степінь', '');
 
-alert( pow (x, n) );
-console.log( pow (x, n) );
+alert( pow(x, n) );
+console.log( pow(x, n) );
